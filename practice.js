@@ -19,7 +19,13 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function isTyler(name) {
+  if (name === 'Tyler') {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -29,7 +35,9 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function getName(name) {
+  return prompt('What is your name?');
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -42,7 +50,10 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function welcome() {
+  name = getName();
+  alert('Welcome, ' + name);
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -52,7 +63,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+// Parameters are the names listed in a function's definition. Arguments are the values passed to and received by a function.
 
 ////////// PROBLEM 5 //////////
 
@@ -62,7 +73,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+// false, null, undefined, 0, NaN, '', "", (document.all)
 
 ////////// PROBLEM 6 //////////
 
@@ -72,7 +83,9 @@ var name = 'Tyler';
 
 //Code Here
   
-
+function myName() {
+  return 'Jordan';
+}
 
 /*
   Now save the function definition of myName into a new variable called newMyName
@@ -80,7 +93,7 @@ var name = 'Tyler';
 
 //Code Here
 
-
+var newMyName = myName;
 
 /*
   Now alert the result of invoking newMyName
@@ -88,7 +101,7 @@ var name = 'Tyler';
 
 // Code Here
 
-
+alert(newMyName());
 
 ////////// PROBLEM 7 //////////
 
@@ -98,7 +111,11 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function outerFn() {
+  return function() {
+    return "Jordan";
+  }
+}
 
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
@@ -106,10 +123,12 @@ var name = 'Tyler';
 
 //Code Here
 
-
+innerFn = outerFn();
 
 /* 
   Now invoke innerFn.
 */
 
 // Code Here
+
+innerFn();
