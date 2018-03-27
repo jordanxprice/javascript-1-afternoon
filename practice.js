@@ -9,7 +9,9 @@
 ////////// PROBLEM 1 //////////
 
 // Do not edit the code below.
-var name = 'Tyler';
+
+
+
 // Do not edit the code above.
 
 /*
@@ -19,13 +21,7 @@ var name = 'Tyler';
 
 //Code Here
 
-function isTyler(name) {
-  if (name === 'Tyler') {
-    return true;
-  } else {
-    return false;
-  }
-}
+
 
 ////////// PROBLEM 2 //////////
 
@@ -35,9 +31,7 @@ function isTyler(name) {
 
 //Code Here
 
-function getName(name) {
-  return prompt('What is your name?');
-}
+
 
 ////////// PROBLEM 3 //////////
 
@@ -50,10 +44,7 @@ function getName(name) {
 
 //Code Here
 
-function welcome() {
-  name = getName();
-  alert('Welcome, ' + name);
-}
+
 
 ////////// PROBLEM 4 //////////
 
@@ -82,10 +73,7 @@ function welcome() {
 */
 
 //Code Here
-  
-function myName() {
-  return 'Jordan';
-}
+
 
 /*
   Now save the function definition of myName into a new variable called newMyName
@@ -93,7 +81,6 @@ function myName() {
 
 //Code Here
 
-var newMyName = myName;
 
 /*
   Now alert the result of invoking newMyName
@@ -101,7 +88,7 @@ var newMyName = myName;
 
 // Code Here
 
-alert(newMyName());
+
 
 ////////// PROBLEM 7 //////////
 
@@ -111,11 +98,7 @@ alert(newMyName());
 
 //Code Here
 
-function outerFn() {
-  return function() {
-    return "Jordan";
-  }
-}
+
 
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
@@ -123,7 +106,7 @@ function outerFn() {
 
 //Code Here
 
-innerFn = outerFn();
+
 
 /* 
   Now invoke innerFn.
@@ -131,4 +114,3 @@ innerFn = outerFn();
 
 // Code Here
 
-innerFn();
